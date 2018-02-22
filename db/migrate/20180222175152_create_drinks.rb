@@ -1,0 +1,12 @@
+class CreateDrinks < ActiveRecord::Migration[5.1]
+  def change
+    create_table :drinks do |t|
+      t.string :name
+      t.string :alcohol
+      t.string :mixers
+      t.text :directions
+
+      t.timestamps
+    end
+  end
+end
